@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: Visual Structure Check
 
 Evalúa la presencia de elementos visuales clave como `<img>` y estructuras visuales en las páginas .astro del proyecto.

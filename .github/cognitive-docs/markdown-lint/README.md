@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: Markdown Lint
 
 Este workflow ejecuta un análisis sintáctico sobre todos los archivos `.md` del repositorio para asegurar que cumplen los estándares de formato.

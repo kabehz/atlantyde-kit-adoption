@@ -1,3 +1,4 @@
+
 # 🤝 CÓDIGO DE CONDUCTA · Comunidad ATLANTYDE
 
 Este documento establece los principios fundamentales que rigen nuestra comunidad y ecosistema federado.  
@@ -46,3 +47,4 @@ No toleraremos comportamientos que pongan en peligro la integridad del colectivo
 📌 *Desde Andalucía, por una Europa ética, justa y tecnológicamente soberana.*
 
 © 2024 ATLANTYDE – Federación cooperativa de ciudadanos, developers y soñadores.
+

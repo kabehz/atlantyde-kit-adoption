@@ -53,7 +53,7 @@ También puedes consultar:
 
 > Desde Andalucía, con visión europea, para una humanidad soberana, conectada y ética.
 
-© 2025 ATLANTYDE – Manifiesto, ética y herramientas para construir desde los márgenes.
+© 2024 ATLANTYDE – Manifiesto, ética y herramientas para construir desde los márgenes.
 ---
 
 ## 🗣️ Participa en la Comunidad

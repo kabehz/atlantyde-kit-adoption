@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: Escalabilidad AI Analyzer
 
 Detecta la presencia de patrones de diseño escalables y compatibles con inteligencia artificial en la arquitectura técnica del sistema.

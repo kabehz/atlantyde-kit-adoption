@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: Consent Log Validator
 
 Valida que el consentimiento ético y legal esté explícitamente reflejado en el documento de adhesión o formularios del proyecto.

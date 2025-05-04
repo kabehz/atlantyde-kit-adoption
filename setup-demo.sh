@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 echo "🌊 Bienvenido a ATLANTYDE-KIT · Setup Interactivo"

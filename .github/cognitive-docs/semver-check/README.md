@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: SemVer Check
 
 Este microservicio valida que todos los archivos del repositorio contengan marcas explícitas de versión siguiendo el estándar `ATLANTYDE vX.X.X`.
