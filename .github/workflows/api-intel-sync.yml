@@ -1,0 +1,17 @@
+name: 🌐 API Interoperable Intel Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1' # Cada lunes a las 09:00 UTC
+
+jobs:
+  fetch-api-intel:
+    name: API Insight Extraction
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔄 Checkout
+        uses: actions/checkout@v3
+
+      - name: 🧠 Ejecutar extracción de datos API
+        run: python3 .github/actions/api-intel-sync/intel_fetch.py

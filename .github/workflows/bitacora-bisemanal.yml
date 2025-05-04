@@ -1,0 +1,23 @@
+name: 📅 Bitácora BISEMANAL de Cambios y Autores
+
+on:
+  schedule:
+    - cron: '0 8 */14 * *'  # Cada 14 días a las 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  generar-bitacora:
+    name: 🧾 Generar Bitácora de Cambios
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔄 Checkout
+        uses: actions/checkout@v3
+
+      - name: 🧠 Ejecutar script de bitácora
+        run: bash .github/scripts/gen-bitacora.sh
+
+      - name: 📤 Subir resultado como artefacto
+        uses: actions/upload-artifact@v3
+        with:
+          name: bitacora-cambios
+          path: .github/bitacora-cambios.md
