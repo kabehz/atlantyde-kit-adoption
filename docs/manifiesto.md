@@ -1,0 +1,2 @@
+# Manifiesto Fundacional
+ATLANTYDE nace como una cooperativa tecnológica, emocional y civilizatoria desde el sur de Europa. El propósito es democratizar la soberanía digital, reconectar con el bienestar emocional y regenerar el pacto intergeneracional.

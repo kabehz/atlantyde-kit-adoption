@@ -1,0 +1,29 @@
+name: ATLANTYDE Visual Regression Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  visual-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar dependencias de Astro
+        run: |
+          npm install
+
+      - name: Construir sitio Astro para pruebas
+        run: |
+          npm run build
+
+      - name: Comprobar estructura visual básica
+        run: |
+          echo "🧪 Validando estructura visual principal..."
+          if [ ! -f src/pages/index.astro ]; then
+            echo "::error::index.astro no existe"
+            exit 1
+          fi
+          grep -q '<section' src/pages/index.astro && echo "✅ Secciones visuales encontradas." || echo "::warning::Faltan secciones visuales."

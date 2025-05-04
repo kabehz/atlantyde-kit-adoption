@@ -1,0 +1,17 @@
+name: ATLANTYDE Repo Structure Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  structure-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Mostrar estructura del repositorio
+        run: |
+          echo "📦 Estructura completa del repositorio:"
+          tree -a -I 'node_modules|.git' -L 4 || find . -type f

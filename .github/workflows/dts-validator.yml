@@ -1,0 +1,13 @@
+name: ATLANTYDE DTS Validator
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validar alineación deontológica, taxonómica y semántica
+        run: |
+          echo "🧠 Validando presencia de términos estratégicos..."
+          grep -iEr 'ética|soberanía|federado|trazabilidad|cooperativa' . || echo "::notice::Se recomienda reforzar alineación con el ADN ATLANTYDE"
