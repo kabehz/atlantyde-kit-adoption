@@ -1,19 +1,53 @@
-# Bienvenida a ATLANTYDE-KIT
+# 🚀 HOJA DE RUTA ESTRATÉGICA · ATLANTYDE 2025–2027
 
-Este repositorio representa la base cooperativa y federada de la iniciativa ATLANTYDE. Desde aquí podrás desplegar tu nodo, adaptarlo a tu territorio y contribuir al propósito común de soberanía tecnológica, ética digital y regeneración civilizatoria.
+## 🎯 Objetivo General
 
-## 🚀 ¿Eres nuevo socio?
+Consolidar ATLANTYDE como el **socio colaborador más importante de Europa** en:
+- FinOps federado
+- Soberanía digital interoperable
+- Infraestructura energética distribuida y justa
 
-👉 [Sigue la Guía de Uso paso a paso](guia.md)
+---
 
-## 🧭 Explora la documentación
+## 🧭 FASES ESTRATÉGICAS
 
-- [Manifiesto Fundacional](manifiesto.md)
-- [Gobernanza y Estructura](governance.md)
-- [Hoja de Ruta PIGs](roadmap-eu.md)
+### 📍 2025 – Consolidación Nacional + Precertificación Europea
 
+- ✅ Despliegue operativo en España (ITI Andalucía, zonas con alto desempleo)
+- 🏗️ Infraestructura local validada (Astro + MkDocs + microservicios DTS + GitOps)
+- 📘 Certificación base: OpenChain + adherencia EUPL + RGPD + SEMVER
+- 🧑‍🏫 Lanzamiento ATLANTYDE Academy para formar a 100 técnicos FinOps
 
+### 🇪🇺 2026 – Expansión a PIGs: Portugal, Italia, Grecia
 
-## 🌍 Propósito ético y federado
+- 🔗 Acuerdos marco con municipios e instituciones públicas locales
+- 🌍 Interconexión de nodos con stack soberano + nube distribuida k3s
+- 💶 Acceso a fondos europeos LIFE, CEF, Digital Europe, Horizon
+- 🔋 Prueba piloto con microgrids energéticos (comunidades locales)
 
-ATLANTYDE nace como una iniciativa cooperativa de soberanía digital, basada en la colaboración, la trazabilidad y el respeto por el marco normativo europeo. Nuestra documentación, plataforma y procesos están orientados a garantizar el bienestar común, el respeto a los datos y la transparencia en cada nodo federado.
+### 🌐 2027 – Entrada al Mercado Europeo + Escalado B2G/B2B
+
+- 🧾 Integración en catálogos Gaia-X, PEPPOL, eDelivery
+- 🏛️ Presentación oficial a DG DIGIT y DG CONNECT
+- 🧠 Panel de IA ética y federada para FinOps + decisiones energéticas comunitarias
+- 🌟 ATLANTYDE como modelo de gobernanza digital con impacto humano
+
+---
+
+## 🧠 CLAVES DE IMPACTO
+
+| Dimensión         | Estrategia                                                                |
+|------------------|---------------------------------------------------------------------------|
+| Tecnológica       | GitOps · Astro · K3s · Open Source auditable · RGPD · Cloud soberano     |
+| Legal / Ética     | EUPL · OpenChain · Pacto Social · DTS · FinOps ético                     |
+| Educativa         | Formación propia · Certificaciones · Empleo digital en zonas rurales      |
+| Energética        | Nodo + Microgrid · Software optimizador · Datos comunitarios             |
+
+---
+
+## 📌 Misión final
+
+> Ser el consorcio de innovación europeo más ético, trazable y libre de explotación,  
+> garantizando dignidad humana en la transformación digital y energética.
+
+© ATLANTYDE 2024 – Andalucía, Europa, Humanidad.
