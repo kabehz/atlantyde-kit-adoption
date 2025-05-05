@@ -1,0 +1,62 @@
+name: Sync & Version with AstroKit
+
+description: |
+  Workflow complementario para aplicar cambios GitOps en manifiestos AstroKit,
+  validar despliegues y aplicar etiquetas SemVer dinámicas.
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches: [main]
+
+jobs:
+  validate-k8s-manifests:
+    name: Validar manifiestos Kubernetes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Instalar kustomize y kubeval
+        run: |
+          sudo apt-get install -y kubeval
+          curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+          sudo mv kustomize /usr/local/bin
+
+      - name: Validar estructura K8s
+        run: |
+          kustomize build k8s/ > compiled.yaml
+          kubeval compiled.yaml
+
+  semantic-version-and-changelog:
+    name: Versionado y changelog automatizado
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Instalar herramientas Node
+        run: npm install -g standard-version
+
+      - name: Generar changelog y versión
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          standard-version --release-as auto
+          git push --follow-tags origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  track-merge-expectation:
+    name: Registrar fusión y actualizar roadmap
+    runs-on: ubuntu-latest
+    steps:
+      - name: Anotar PR y versión en ROAMAP.md
+        run: |
+          echo "- [x] PR #${{ github.event.pull_request.number }} fusionado con tag automático ✔️" >> ROADMAP.md
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add ROADMAP.md
+          git commit -m "track: actualización del roadmap tras merge de PR"
+          git push

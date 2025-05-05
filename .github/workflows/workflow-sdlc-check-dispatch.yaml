@@ -1,0 +1,42 @@
+name: Validación Manual SDLC
+
+description: >-
+  Permite ejecución manual desde GitHub.com o GitHub.dev
+  para validar la estructura del proyecto según criterios SDLC definidos.
+
+on:
+  workflow_dispatch:
+    inputs:
+      entorno:
+        description: 'Entorno de validación (dev/stage/prod)'
+        required: false
+        default: 'dev'
+
+jobs:
+  validar_sdlc:
+    name: Validar estructura SDLC del proyecto
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Instalar Python y dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || true
+
+      - name: Ejecutar script de validación SDLC
+        run: |
+          python scripts/sdlc_validator.py
+        env:
+          ASTROKIT_ENV: ${{ github.event.inputs.entorno }}
+
+      - name: Registrar en ROAMAP.md si pasa validación
+        if: success()
+        run: |
+          echo "- [x] Validación SDLC ejecutada manualmente en entorno '${{ github.event.inputs.entorno }}' ✅" >> ROADMAP.md
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add ROADMAP.md
+          git commit -m "chore: validación manual SDLC registrada"
+          git push
