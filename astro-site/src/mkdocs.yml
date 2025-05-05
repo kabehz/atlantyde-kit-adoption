@@ -1,0 +1,37 @@
+site_name: Atlantyde Kit Adoption
+repo_url: https://github.com/kabehz/atlantyde-kit-adoption
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.sections
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+  palette:
+    scheme: default
+    primary: indigo
+    accent: amber
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+nav:
+  - Inicio: index.md
+  - Guía de instalación: INSTALL.md
+  - Contribuir: contributing.md
+  - Código de conducta: CODE_OF_CONDUCT.md
+  - JaSiLez v0.4.0-RC:
+      - Introducción CI/GitOps: docs/v0.4.0/ci-gitops.md
+      - Workflows CI/CD: docs/v0.4.0/workflows.md
+      - Validación SDLC: docs/v0.4.0/sdlc-validator.md
+      - ROADMAP: ROADMAP.md
