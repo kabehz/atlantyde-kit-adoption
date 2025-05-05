@@ -22,3 +22,17 @@ Usamos CI/CD y GitHub Pages. Toda célula puede replicar y adaptar el modelo.
 
 ## 7. Ciclo de mejora continua
 Retroalimentamos desde las personas, no solo desde el código.
+
+---
+
+## 🔍 Checklist de Validación SDLC
+
+| Fase                  | Validación                                                                 |
+|-----------------------|---------------------------------------------------------------------------|
+| Inspiración           | ¿Cumple con el propósito ético y cooperativo?                            |
+| Análisis ético-legal  | ¿Cumple con RGPD, EUPL y principios europeos?                            |
+| Diseño iterativo      | ¿Se han realizado prototipos funcionales y visuales?                    |
+| Desarrollo distribuido| ¿Se han usado herramientas open source y markdown?                      |
+| Verificación          | ¿Se han realizado pruebas de accesibilidad y trazabilidad?              |
+| Despliegue            | ¿Se ha usado CI/CD y GitHub Pages para federación?                      |
+| Mejora continua       | ¿Se ha retroalimentado desde las personas y no solo desde el código?     |

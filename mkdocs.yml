@@ -1,0 +1,38 @@
+site_name: ATLANTYDE Documentation
+site_description: Documentación técnica y legal del proyecto ATLANTYDE
+site_author: ATLANTYDE-KIT
+site_url: https://atlantyde-kit.github.io
+repo_url: https://github.com/ATLANTYDE-KIT/atlantyde-kit-adoption
+theme:
+  name: material
+  palette:
+    primary: 'blue'
+    accent: 'light blue'
+  custom_dir: overrides
+nav:
+  - Home: index.md
+  - Manifiesto: manifiesto.md
+  - Microservicios: microservicios.md
+  - SDLC: sdlc.md
+  - Roadmap Europeo: roadmap-eu.md
+  - Kit de Branding: kit-branding.md
+  - Guía: guia.md
+  - Adhesión: adhesion.md
+  - Progreso Cognitivo: cognitive-progress.md
+  - Convenios: convenios.md
+  - Estatutos: estatutos.md
+  - Gobernanza: governance.md
+plugins:
+  - search
+  - mkdocs-material
+  - markdownextradata
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - codehilite
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ATLANTYDE-KIT

@@ -1,0 +1,33 @@
+{
+    "version_file": "version.txt",
+    "required_files": [
+      "README.md",
+      "LICENSE",
+      "CONTRIBUTING.md",
+      "CODE_OF_CONDUCT.md"
+    ],
+    "ci_cd_pipeline": {
+      "enabled": true,
+      "tool": "GitHub Actions",
+      "workflows": [
+        ".github/workflows/api-intel-sync.yml",
+        ".github/workflows/security-checks.yml"
+      ]
+    },
+    "documentation": {
+      "docs_folder": "docs/",
+      "required_pages": [
+        "index.md",
+        "manifiesto.md",
+        "microservicios.md",
+        "sdlc.md",
+        "roadmap-eu.md",
+        "kit-branding.md",
+        "guia.md"
+      ]
+    },
+    "security": {
+      "dependency_review": true,
+      "codeql_analysis": true
+    }
+  }
