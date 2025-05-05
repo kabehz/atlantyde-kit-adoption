@@ -3,6 +3,7 @@
 ## 🎯 Objetivo General
 
 Consolidar ATLANTYDE como el **socio colaborador más importante de Europa** en:
+
 - FinOps federado
 - Soberanía digital interoperable
 - Infraestructura energética distribuida y justa

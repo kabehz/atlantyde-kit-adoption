@@ -1,5 +1,11 @@
 import unittest
-from scripts.sdlc_validator import validate_file_exists, validate_version_format
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..", "actions", "sdlc-validator", "tests")))
+import json
+import re
+from datetime import datetime
+from sdlc_validator import validate_file_exists, validate_version_format
 
 class TestSDLCValidator(unittest.TestCase):
     def test_validate_file_exists(self):
