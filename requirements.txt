@@ -1,6 +1,7 @@
 # Documentación & Requisitos
 mkdocs==1.5.2
-mkdocs-material==9.1.15
+mkdocs-material==9.6.4
+mkdocs-material-extensions==1.0.0
 mkdocs-markdownextradata-plugin==0.1.9
 mkdocs-awesome-pages-plugin==2.10.1
 mkdocs-macros-plugin==1.3.7
