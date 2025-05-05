@@ -1,0 +1,46 @@
+name: 🧠 Registro de Avances Cognitivos ATLANTYDE
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'setup-demo.sh'
+      - '**/onboarding/**'
+      - '**/progress/**'
+  issues:
+    types: [opened, edited, labeled]
+
+jobs:
+  gamified-progress-tracker:
+    runs-on: ubuntu-latest
+    name: 🧩 Sumar progreso + crear insignia simbólica
+    steps:
+      - name: 🧠 Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: 📈 Analizar archivos de progreso y onboarding
+        id: progress
+        run: |
+          echo "score=0" >> $GITHUB_ENV
+          echo "🔍 Escaneando contribuciones..."
+          if grep -q "TOTAL SABIDURÍA GANADA:" setup-demo.sh; then
+            echo "✅ Puntos cognitivos detectados"
+            echo "score=40" >> $GITHUB_ENV
+          fi
+
+      - name: 🏅 Crear badge simbólico en consola
+        run: |
+          echo "::notice:: ¡Felicidades! Has desbloqueado el badge digital: NODO-JOVEN-ETHICAL-2024"
+          echo "::notice:: Comparte tu avance en Discussions o Issues con este código para validación humana 🧬"
+
+      - name: ✍️ Crear comentario sugerido
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          echo "🎮 Nuevo progreso detectado por el usuario: ${{ github.actor }}" >> summary.log
+          echo "🧠 Puntos ganados: ${{ env.score }}" >> summary.log
+          echo "🏅 Badge: NODO-JOVEN-ETHICAL-2024" >> summary.log
+
+      - name: 🗂 Guardar archivo de progreso
+        run: |
+          mkdir -p .github/progress/
+          cp summary.log .github/progress/${{ github.actor }}-progress.txt

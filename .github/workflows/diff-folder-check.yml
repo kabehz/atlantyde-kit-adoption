@@ -1,0 +1,31 @@
+name: 📂 Diff entre carpetas en ramas activas
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - gh-pages
+      - 'release/**'
+
+jobs:
+  diff-carpeta-tracking:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔄 Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: 🔍 Ejecutar diff entre carpetas
+        run: |
+          mkdir -p .github/diff-reports
+          echo "Comparando contenido entre carpetas..." > .github/diff-reports/folder-diff.txt
+          if [ -d new/docs ] && [ -d docs ]; then
+            diff -ruN docs/ new/docs/ >> .github/diff-reports/folder-diff.txt || echo "✔️ Diferencias encontradas"
+          else
+            echo "❗ No se encontró estructura esperada new/docs/" >> .github/diff-reports/folder-diff.txt
+          fi
+
+      - name: 📤 Subir resultado del diff como artefacto
+        uses: actions/upload-artifact@v3
+        with:
+          name: folder-diff-report
+          path: .github/diff-reports/folder-diff.txt

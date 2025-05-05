@@ -1,0 +1,26 @@
+
+name: ATLANTYDE Semantic License Diff
+
+on:
+  push:
+    paths:
+      - 'LICENSE.md'
+  workflow_dispatch:
+
+jobs:
+  semantic-diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar herramienta de diff semántico
+        run: |
+          pip install difflib
+          sudo apt update && sudo apt install -y wdiff || true
+
+      - name: Comparar cambios recientes en LICENSE.md
+        run: |
+          echo "🧠 Analizando diferencias semánticas en LICENSE.md..."
+          git diff HEAD~1 HEAD -- LICENSE.md > semantic-diff.txt || echo "::notice::Sin cambios detectados o archivo nuevo."
+          cat semantic-diff.txt

@@ -1,0 +1,29 @@
+
+name: ATLANTYDE Render Lint Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar dependencias Astro
+        run: |
+          npm install
+
+      - name: Validar estructura y compilación de Astro
+        run: |
+          echo "🚀 Ejecutando lint estructural..."
+          npm run astro check || echo "::error::Errores de compilación o sintaxis detectados."
+
+      - name: Validar sintaxis del index.astro
+        run: |
+          if grep -q '<section' src/pages/index.astro; then
+            echo "✅ index.astro contiene secciones."
+          else
+            echo "::warning::No se detectaron secciones visuales en index.astro"
+          fi

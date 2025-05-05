@@ -1,0 +1,94 @@
+├── .github/
+    ├── cognitive-docs/
+        ├── cognitive-sync/
+            ├── README.md
+        ├── component-audit/
+            ├── README.md
+        ├── consent-log/
+            ├── README.md
+        ├── dts-validator/
+            ├── README.md
+        ├── escalabilidad-ai/
+            ├── README.md
+        ├── link-checker/
+            ├── README.md
+        ├── markdown-lint/
+            ├── README.md
+        ├── pacto-social/
+            ├── README.md
+        ├── rgpd-scan/
+            ├── README.md
+        ├── semver-check/
+            ├── README.md
+        ├── visual-structure-check/
+            ├── README.md
+    ├── workflows/
+        ├── cognitive-strategy.yml
+        ├── cognitive-sync.yml
+        ├── component-audit.yml
+        ├── consent-log.yml
+        ├── deploy.yml
+        ├── dts-validator.yml
+        ├── escalabilidad-ai.yml
+        ├── legal-review.yml
+        ├── link-checker.yml
+        ├── maintenance.yml
+        ├── markdown-lint.yml
+        ├── pacto-social.yml
+        ├── render-lint.yml
+        ├── repo-structure-check.yml
+        ├── rgpd-scan.yml
+        ├── semver-check.yml
+        ├── strategy-check.yml
+        ├── visual-regression.yml
+        ├── visual-review.yml
+        ├── visual-structure-check.yml
+├── CHANGELOG.md
+├── README-microservicios.md
+├── README.md
+├── astro-site/
+    ├── public/
+        ├── assets/
+            ├── README.md
+            ├── banner-hero.jpg
+            ├── favicon.ico
+            ├── fonts/
+                ├── Cinzel.ttf
+                ├── Inter.ttf
+            ├── icon-brujula.svg
+            ├── icon-rosa-vientos.svg
+            ├── icon-tridente.svg
+            ├── logo-atlantyde.svg
+            ├── mockups-laptop.png
+            ├── mockups-mobile.png
+            ├── mockups-shirt.png
+    ├── src/
+        ├── i18n/
+            ├── en.json
+            ├── es.json
+            ├── it.json
+            ├── pt.json
+        ├── pages/
+            ├── branding.astro
+            ├── contact.astro
+            ├── governance.astro
+            ├── index.astro
+            ├── vision.astro
+├── contributing.md
+├── docs/
+    ├── adhesion.md
+    ├── convenios.md
+    ├── estatutos.md
+    ├── governance.md
+    ├── guia.md
+    ├── index.md
+    ├── kit-branding.md
+    ├── manifiesto.md
+    ├── microservicios.md
+    ├── roadmap-eu.md
+    ├── sdlc.md
+├── mkdocs.yml
+├── src/
+    ├── pages/
+        ├── README.md
+        ├── index.astro
