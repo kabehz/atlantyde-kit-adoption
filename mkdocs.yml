@@ -50,7 +50,7 @@ nav:
 
 plugins:
   - search
-  - mkdocs-material
+  #- mkdocs-material
   - markdownextradata
   - awesome-pages
   - macros
