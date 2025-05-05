@@ -1,0 +1,49 @@
+/* General Mermaid container styling */
+.mermaid {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Node styling */
+.mermaid .node rect {
+    fill: #0288d1; /* Primary color */
+    stroke: #01579b; /* Darker border */
+    stroke-width: 2px;
+}
+
+.mermaid .node text {
+    fill: #ffffff; /* White text */
+    font-weight: bold;
+}
+
+/* Edge styling */
+.mermaid .edgePath path {
+    stroke: #0288d1; /* Primary color */
+    stroke-width: 2px;
+}
+
+.mermaid .edgeLabel text {
+    fill: #333333; /* Dark text for labels */
+    font-size: 12px;
+}
+
+/* Flowchart-specific styles */
+.mermaid .flowchart-link {
+    stroke: #0288d1;
+    stroke-width: 2px;
+}
+
+/* Sequence diagram-specific styles */
+.mermaid .actor rect {
+    fill: #4caf50; /* Green for actors */
+    stroke: #388e3c;
+}
+
+.mermaid .messageLine {
+    stroke: #0288d1;
+    stroke-width: 1.5px;
+}
