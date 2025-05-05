@@ -10,8 +10,8 @@ site_dir: site
 theme:
   name: material
   language: es
-  favicon: ../astro-site/public/assets/branding/favicon.ico
-  logo: ../astro-site/public/assets/branding/logo-atlantyde.svg
+  favicon: assets/branding/favicon.ico
+  logo: assets/branding/logo-atlantyde.svg
   icon:
     repo: ../astro-site/public/assets/branding/favicon.ico
   palette:
