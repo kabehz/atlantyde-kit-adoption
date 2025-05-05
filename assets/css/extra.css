@@ -1,0 +1,38 @@
+/* Personalización de encabezados */
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+    color: #1e88e5; /* Azul primario */
+    font-weight: bold;
+}
+
+/* Personalización de enlaces */
+.md-typeset a {
+    color: #0288d1; /* Azul claro */
+    text-decoration: none;
+}
+
+.md-typeset a:hover {
+    text-decoration: underline;
+}
+
+/* Personalización de tablas */
+.md-typeset table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.md-typeset table th, .md-typeset table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.md-typeset table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Personalización de bloques de código */
+.highlight {
+    background-color: #f5f5f5;
+    border-left: 4px solid #0288d1;
+    padding: 10px;
+}

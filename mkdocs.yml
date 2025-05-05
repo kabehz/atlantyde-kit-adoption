@@ -1,8 +1,11 @@
-site_name: ATLANTYDE Documentation
-site_description: Documentación técnica y legal del proyecto ATLANTYDE
-site_author: ATLANTYDE-KIT
-site_url: https://atlantyde-kit.github.io
-repo_url: https://github.com/ATLANTYDE-KIT/atlantyde-kit-adoption
+site_name: ATLANTYDE Innovation SocialTech
+site_description: Documentación de Adopción técnica, adhesión, colabarión y legal de ATLANTYDE SCE
+site_author: Kabehz
+site_url: https://kabehz.github.io/atlantyde-kit.github.io/
+repo_url: https://github.com/kabehz/atlantyde-kit-adoption
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: site
 theme:
   name: material
   palette:
@@ -32,6 +35,13 @@ markdown_extensions:
   - tables
   - admonition
   - codehilite
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.0/mermaid.min.css
+  - assets/css/extra.css
+  #- assets/styles/custom.css
+extra_javascript:
+  - assets/js/custom.js
 extra:
   social:
     - icon: fontawesome/brands/github
