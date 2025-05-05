@@ -26,8 +26,5 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Run Dependency Review
-        uses: github/dependency-review-action@v4
-        with:
-          output_format: json
-          output_file: dependency-review.json
+      - name: 'Dependency Review'
+        uses: actions/dependency-review-action@v4

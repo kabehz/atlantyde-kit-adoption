@@ -6,35 +6,68 @@ repo_url: https://github.com/kabehz/atlantyde-kit-adoption
 edit_uri: edit/main/docs/
 docs_dir: docs
 site_dir: site
+
 theme:
   name: material
+  language: es
+  favicon: assets/branding/atlantyde_logo_part_1.png
+  logo: assets/branding/atlantyde_logo_part_2.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
-    primary: 'blue'
-    accent: 'light blue'
-  custom_dir: overrides
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: light blue
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: teal
+  features:
+    - navigation.expand
+    - navigation.instant
+    - toc.integrate
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - search.share
+
 nav:
-  - Home: index.md
-  - Manifiesto: manifiesto.md
-  - Microservicios: microservicios.md
-  - SDLC: sdlc.md
-  - Roadmap Europeo: roadmap-eu.md
-  - Kit de Branding: kit-branding.md
-  - Guía: guia.md
-  - Adhesión: adhesion.md
-  - Progreso Cognitivo: cognitive-progress.md
-  - Convenios: convenios.md
-  - Estatutos: estatutos.md
-  - Gobernanza: governance.md
+  - 🧭 Home: index.md
+  - 🛠️ Manifiesto: manifiesto.md
+  - 📦 Microservicios: microservicios.md
+  - 📊 SDLC: sdlc.md
+  - 🗺️ Roadmap Europeo: roadmap-eu.md
+  - 🎨 Kit de Branding: kit-branding.md
+  - 📖 Guía: guia.md
+  - 🤝 Adhesión: adhesion.md
+  - 🧠 Progreso Cognitivo: cognitive-progress.md
+  - 📜 Convenios: convenios.md
+  - 📑 Estatutos: estatutos.md
+  - 🏛️ Gobernanza: governance.md
+
 plugins:
   - search
   - mkdocs-material
   - markdownextradata
+  - awesome-pages
+  - macros
+  - include-markdown
+  - redirects
+  - git-revision-date-localized:
+      type: timeago
+      fallback_to_build_date: true
+      enable_creation_date: true
+
 markdown_extensions:
   - toc:
       permalink: true
   - tables
   - admonition
   - codehilite
+
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.0/mermaid.min.css
@@ -42,7 +75,9 @@ extra_css:
   #- assets/styles/custom.css
 extra_javascript:
   - assets/js/custom.js
+
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ATLANTYDE-KIT
+    
