@@ -13,5 +13,13 @@ jobs:
       - name: 🔄 Checkout
         uses: actions/checkout@v3
 
+      - name: Check Billing Status
+        run: |
+          echo "Checking billing status..."
+          if ! curl -s https://api.github.com/"${{github.actor}}"/billing | grep -q 'active'; then
+            echo "::error::Billing issue detected. Please check your account settings."
+            exit 1
+          fi
+
       - name: 🧠 Ejecutar extracción de datos API
         run: python3 .github/actions/api-intel-sync/intel_fetch.py
