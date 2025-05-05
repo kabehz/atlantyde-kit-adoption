@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: RGPD Scan
 
 Escanea el código fuente y documentación en busca de términos sensibles que puedan violar el RGPD.

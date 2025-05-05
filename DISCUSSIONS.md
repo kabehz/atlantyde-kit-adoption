@@ -1,3 +1,4 @@
+
 # 🗣️ DISCUSSIONS · Bienvenida a la Comunidad ATLANTYDE
 
 Este espacio está pensado para **conectar, compartir y construir** entre nodos, personas aliadas y futuras incorporaciones a ATLANTYDE.
@@ -29,3 +30,4 @@ Te animamos a:
 📌 *Desde Andalucía, con visión europea, construimos nodos éticos para el futuro digital humano.*
 
 © 2024 ATLANTYDE – Federación de Innovación Civilizatoria
+

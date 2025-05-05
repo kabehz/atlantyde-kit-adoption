@@ -1,3 +1,4 @@
+
 name: ATLANTYDE Visual Regression Test
 
 on:
@@ -27,3 +28,4 @@ jobs:
             exit 1
           fi
           grep -q '<section' src/pages/index.astro && echo "✅ Secciones visuales encontradas." || echo "::warning::Faltan secciones visuales."
+

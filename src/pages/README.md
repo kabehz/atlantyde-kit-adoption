@@ -1,3 +1,4 @@
+
 # 🌐 index.astro – Landing Institucional ATLANTYDE
 
 Este archivo representa la **página de entrada visual y emocional al ecosistema ATLANTYDE**. Está diseñado para captar la atención, presentar nuestra causa y facilitar la incorporación de nuevos socios fundadores.

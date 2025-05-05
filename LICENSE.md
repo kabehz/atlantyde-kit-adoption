@@ -1,3 +1,4 @@
+
 # 🛡️ Licencia ATLANTYDE · EUPL v1.2
 
 Este repositorio está licenciado bajo los términos de la **Licencia Pública de la Unión Europea (EUPL v1.2)**, una licencia aprobada por la Comisión Europea compatible con el derecho de todos los Estados miembros.

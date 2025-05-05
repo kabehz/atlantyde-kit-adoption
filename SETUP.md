@@ -1,3 +1,4 @@
+
 # ⚙️ SETUP.md – Configuración para GitHub Pages
 
 Este proyecto permite desplegar en GitHub Pages dos frontends:

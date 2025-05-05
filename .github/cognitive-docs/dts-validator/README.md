@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: DTS Validator
 
 Este workflow valida que los archivos contengan terminología coherente con el enfoque ético, semántico y organizativo del proyecto.

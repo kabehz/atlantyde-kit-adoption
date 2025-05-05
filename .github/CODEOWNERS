@@ -1,0 +1,6 @@
+# 📘 CODEOWNERS · Protección de cambios
+# Áreas críticas propiedad de Jaime Silva (@kabehz)
+
+astro-site/       @kabehz
+docs/             @kabehz
+.github/          @kabehz

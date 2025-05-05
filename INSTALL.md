@@ -1,3 +1,4 @@
+
 # 📦 INSTALL.md – Instalación de ATLANTYDE-KIT
 
 Este repositorio contiene la infraestructura base para presentar ATLANTYDE de forma ética, federada y trazable mediante Astro + MkDocs.

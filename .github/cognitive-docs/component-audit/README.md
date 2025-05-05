@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: Component Audit
 
 Audita todos los componentes `.astro` del repositorio para asegurar que están bien estructurados, son reutilizables y mantienen una API limpia.

@@ -1,3 +1,4 @@
+
 # 🚀 HOJA DE RUTA ESTRATÉGICA · ATLANTYDE 2025–2027
 
 ## 🎯 Objetivo General

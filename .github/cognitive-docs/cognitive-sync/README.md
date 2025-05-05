@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: Cognitive Sync
 
 Este workflow permite capturar, registrar y trazar la intención del usuario antes de iniciar una sesión de trabajo técnico o estratégico.

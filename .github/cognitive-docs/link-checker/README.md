@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: Link Checker
 
 Verifica que los enlaces contenidos en la documentación sean válidos, evitando referencias rotas en el ecosistema documental.

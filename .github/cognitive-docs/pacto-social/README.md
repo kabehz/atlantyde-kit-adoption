@@ -1,3 +1,4 @@
+
 # Microservicio Cognitivo: Pacto Social Validator
 
 Este microservicio verifica que el archivo `docs/adhesion.md` contenga una declaración fuerte de compromiso ético, social y cooperativo.
